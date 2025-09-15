@@ -3,8 +3,8 @@ import React, { useLayoutEffect, type PropsWithChildren } from 'react'
 import { reaction } from 'mobx'
 import { observer } from 'mobx-react-lite'
 
-import { Button, ScrollArea } from '@hanzo/ui/primitives'
-import { cn } from '@hanzo/ui/util'
+import { Button, ScrollArea } from '@luxfi/ui/primitives'
+import { cn } from '@luxfi/ui/util'
 
 import type { LineItem } from '../../../types'
 import { useCommerce } from '../../../service/context'

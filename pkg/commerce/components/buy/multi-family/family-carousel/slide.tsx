@@ -4,12 +4,12 @@ import React from 'react'
 import {
   ApplyTypography,
   MediaStack
-} from '@hanzo/ui/primitives'
-import type { Dimensions } from '@hanzo/ui/types'
+} from '@luxfi/ui/primitives'
+import type { Dimensions } from '@luxfi/ui/types'
 
 import type { ItemSelectorOptions, Family, LineItem, ItemSelector } from '../../../../types'
 import { ButtonItemSelector } from '../../..'
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
 
 const FamilySlide: React.FC<Omit<ItemSelector, 'items'> & {
   family: Family

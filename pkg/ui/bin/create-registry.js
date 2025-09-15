@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Simple registry builder for @hanzo/ui
+ * Simple registry builder for @luxfi/ui
  * Creates the necessary structure for the MCP registry
  */
 

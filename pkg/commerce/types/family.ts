@@ -1,4 +1,4 @@
-import type { ImageDef } from '@hanzo/ui/types'
+import type { ImageDef } from '@luxfi/ui/types'
 import type Product from './product'
 
 interface Family {

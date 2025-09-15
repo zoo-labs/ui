@@ -1,11 +1,11 @@
 {
-  "name": "@hanzo/ui",
+  "name": "@luxfi/ui",
   "version": "4.5.4",
   "description": "Library that contains shared UI primitives, support for a common design system, and other boilerplate support.",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public",
-    "scope": "@hanzo"
+    "scope": "@luxfi"
   },
   "author": "Hanzo AI, Inc.",
   "license": "BSD-3-Clause",
@@ -29,7 +29,7 @@
     "ui"
   ],
   "scripts": {
-    "lat": "npm show @hanzo/ui version",
+    "lat": "npm show @luxfi/ui version",
     "pub": "npm publish",
     "tc": "tsc",
     "build": "tsc -p tsconfig.json",
@@ -38,7 +38,7 @@
     "registry:mcp:http": "node ./bin/cli.js registry:mcp --http"
   },
   "bin": {
-    "@hanzo/ui": "./bin/cli.js",
+    "@luxfi/ui": "./bin/cli.js",
     "hanzo-ui": "./bin/cli.js"
   },
   "exports": {
@@ -60,7 +60,7 @@
     }
   },
   "dependencies": {
-    "@hanzo/react-drawer": "^0.1.8",
+    "@luxfi/react-drawer": "^0.1.8",
     "@modelcontextprotocol/sdk": "^1.10.2",
     "@next/third-parties": "^15.0.1",
     "@radix-ui/react-accordion": "^1.1.2",

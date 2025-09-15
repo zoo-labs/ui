@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite'
 
 import { type LucideProps } from 'lucide-react'
 
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
 import type { LineItem } from '../../types'
 
   // Generalize this.

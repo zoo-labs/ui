@@ -46,7 +46,7 @@ export async function generateMetadata(props: {
       card: "summary_large_image",
       title: page.data.title,
       description: page.data.description,
-      creator: "@hanzoai",
+      creator: "@luxfiai",
     },
   }
 }

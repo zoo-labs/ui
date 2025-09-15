@@ -50,7 +50,7 @@ export async function generateMetadata({
       title: block.name,
       description: block.description,
       images: [siteConfig.ogImage],
-      creator: "@hanzoai",
+      creator: "@luxfiai",
     },
   }
 }

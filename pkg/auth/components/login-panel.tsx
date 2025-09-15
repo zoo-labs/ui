@@ -4,8 +4,8 @@ import { useRouter } from 'next/navigation'
 import { observer } from 'mobx-react-lite'
 import Link from 'next/link'
 
-import { ApplyTypography, Button, Separator, toast, Toaster } from '@hanzo/ui/primitives'
-import { cn } from '@hanzo/ui/util'
+import { ApplyTypography, Button, Separator, toast, Toaster } from '@luxfi/ui/primitives'
+import { cn } from '@luxfi/ui/util'
 
 import { useAuth, type AuthProvider } from '../service'
 import { Facebook, Google, GitHub } from '../icons'

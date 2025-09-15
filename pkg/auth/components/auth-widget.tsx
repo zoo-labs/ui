@@ -9,10 +9,10 @@ import {
   PopoverContent, 
   PopoverTrigger, 
   Separator 
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
-import type { LinkDef } from '@hanzo/ui/types'
-import { cn } from '@hanzo/ui/util'
+import type { LinkDef } from '@luxfi/ui/types'
+import { cn } from '@luxfi/ui/util'
 
 import { useAuth } from '../service'
 

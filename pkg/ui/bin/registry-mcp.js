@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 // This is the main entry point for the MCP server
-// It should be runnable directly with npx @hanzo/ui registry:mcp
+// It should be runnable directly with npx @luxfi/ui registry:mcp
 
 /**
  * This script starts the MCP server for Hanzo UI
- * It can be run with npx @hanzo/ui registry:mcp
+ * It can be run with npx @luxfi/ui registry:mcp
  */
 const { StdioServerTransport } = require("@modelcontextprotocol/sdk/server/stdio.js");
 

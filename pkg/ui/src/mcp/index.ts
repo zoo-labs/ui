@@ -19,7 +19,7 @@ try {
 }
 
 /**
- * MCP Server implementation for @hanzo/ui registry
+ * MCP Server implementation for @luxfi/ui registry
  * Provides tools for interacting with the registry
  */
 export const server = new Server(
@@ -42,7 +42,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       {
         name: "init",
         description:
-          "Initialize a new project using @hanzo/ui components and styles.",
+          "Initialize a new project using @luxfi/ui components and styles.",
         inputSchema: zodToJsonSchema(z.object({
           style: z.string().optional().describe("The style to use for the project (e.g., 'default' or 'new-york')"),
         })),
@@ -115,9 +115,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "init": {
         const style = args.style || "default"
         
-        let text = `# Initialize a new project with @hanzo/ui
+        let text = `# Initialize a new project with @luxfi/ui
 
-To create a new project with @hanzo/ui components, follow these steps:
+To create a new project with @luxfi/ui components, follow these steps:
 
 1. Create a new project first:
 \`\`\`bash
@@ -136,14 +136,14 @@ pnpm create next-app my-app
 cd my-app
 \`\`\`
 
-3. Install @hanzo/ui and initialize it:
+3. Install @luxfi/ui and initialize it:
 \`\`\`bash
-npx @hanzo/ui@latest init${style ? ` --style=${style}` : ""}
+npx @luxfi/ui@latest init${style ? ` --style=${style}` : ""}
 \`\`\`
 
 This will:
 - Install all necessary dependencies
-- Set up the project structure for @hanzo/ui
+- Set up the project structure for @luxfi/ui
 - Configure tailwind.css with the appropriate theme
 - Add component configuration
 `
@@ -296,7 +296,7 @@ ${setupConfig.description || "Follow any additional setup instructions provided 
         componentDetails += `\n## Installation\n\n`
         componentDetails += `Run the following command to add this component to your project:\n\n`
         componentDetails += `\`\`\`bash\n`
-        componentDetails += `npx @hanzo/ui@latest add ${name}\n`
+        componentDetails += `npx @luxfi/ui@latest add ${name}\n`
         componentDetails += `\`\`\`\n`
 
         return {
@@ -334,7 +334,7 @@ ${setupConfig.description || "Follow any additional setup instructions provided 
         // Main installation command
         instructions += `Run the following command to add the \`${name}\` component to your project:\n\n`
         instructions += `\`\`\`bash\n`
-        instructions += `npx @hanzo/ui@latest add ${name} --style=${style}\n`
+        instructions += `npx @luxfi/ui@latest add ${name} --style=${style}\n`
         instructions += `\`\`\`\n\n`
         
         // Explain what this will do
@@ -390,9 +390,9 @@ ${setupConfig.description || "Follow any additional setup instructions provided 
             styleInfo += `**Usage:**\n\n`
             styleInfo += `\`\`\`bash\n`
             styleInfo += `# Initialize with this style\n`
-            styleInfo += `npx @hanzo/ui@latest init --style=${style.name}\n\n`
+            styleInfo += `npx @luxfi/ui@latest init --style=${style.name}\n\n`
             styleInfo += `# Install components with this style\n`
-            styleInfo += `npx @hanzo/ui@latest add [component] --style=${style.name}\n`
+            styleInfo += `npx @luxfi/ui@latest add [component] --style=${style.name}\n`
             styleInfo += `\`\`\`\n\n`
           })
         }
@@ -464,7 +464,7 @@ ${setupConfig.description || "Follow any additional setup instructions provided 
           }
           
           searchResults += `\n**Installation:**\n\n`
-          searchResults += `\`\`\`bash\nnpx @hanzo/ui@latest add ${item.name}\n\`\`\`\n\n`
+          searchResults += `\`\`\`bash\nnpx @luxfi/ui@latest add ${item.name}\n\`\`\`\n\n`
         })
         
         return {

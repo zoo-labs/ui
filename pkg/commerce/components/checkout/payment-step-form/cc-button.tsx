@@ -1,4 +1,4 @@
-import { Button } from '@hanzo/ui/primitives'
+import { Button } from '@luxfi/ui/primitives'
 
 import PaymentMethods from './card-icon-row'
 import type { PropsWithChildren } from 'react'

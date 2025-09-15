@@ -3,8 +3,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { reaction } from 'mobx'
 import { observer } from 'mobx-react-lite'
 
-import { cn } from '@hanzo/ui/util'
-import type { Dimensions } from '@hanzo/ui/types'
+import { cn } from '@luxfi/ui/util'
+import type { Dimensions } from '@luxfi/ui/types'
 
 import {
   ApplyTypography,
@@ -16,7 +16,7 @@ import {
   CarouselPrevious,
   CarouselNext,
   MediaStack,
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
 import type { ItemSelectorProps, LineItem } from '../../../types'
 import { formatCurrencyValue, accessItemOptions } from '../../../util'

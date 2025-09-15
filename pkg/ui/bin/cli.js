@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Main CLI entry point for @hanzo/ui
+ * Main CLI entry point for @luxfi/ui
  * Supports various commands including registry:mcp
  */
 
@@ -18,7 +18,7 @@ try {
 
 // Set up the program
 program
-  .name("@hanzo/ui")
+  .name("@luxfi/ui")
   .description("Hanzo UI Component Library CLI")
   .version(version);
   

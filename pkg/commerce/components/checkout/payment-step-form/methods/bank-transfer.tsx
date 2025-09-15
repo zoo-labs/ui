@@ -3,7 +3,7 @@
 import React from 'react'
 import { Copy } from 'lucide-react'
 
-import { Button, toast } from '@hanzo/ui/primitives'
+import { Button, toast } from '@luxfi/ui/primitives'
 
 import type { PaymentMethodComponentProps } from '../../../../types'
 

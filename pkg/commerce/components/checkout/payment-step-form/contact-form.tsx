@@ -5,7 +5,7 @@ import {
   FormItem,
   FormMessage,
   Input
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
 import type { ContactFormType } from '../../../types'
  

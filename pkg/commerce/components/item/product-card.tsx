@@ -7,9 +7,9 @@ import {
   CardHeader,
   CardTitle,
   MediaStack
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
 
 import { formatCurrencyValue } from '../../util'
 import type { LineItem } from '../../types'

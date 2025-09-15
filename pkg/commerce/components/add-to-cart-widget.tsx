@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from 'react'
 import { reaction, type IReactionDisposer } from 'mobx'
 import { observer } from 'mobx-react-lite'
 
-import { Button, buttonVariants } from '@hanzo/ui/primitives'
-import { cn, type VariantProps } from '@hanzo/ui/util'
+import { Button, buttonVariants } from '@luxfi/ui/primitives'
+import { cn, type VariantProps } from '@luxfi/ui/util'
 
 import Icons from './Icons'
 import type { LineItem } from '../types'

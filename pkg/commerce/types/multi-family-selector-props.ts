@@ -1,4 +1,4 @@
-import type { Dimensions } from '@hanzo/ui/types'
+import type { Dimensions } from '@luxfi/ui/types'
 
 import type { Family } from './family'
 import type { ItemSelectorOptions } from './item-selector'

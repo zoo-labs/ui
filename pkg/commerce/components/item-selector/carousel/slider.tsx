@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 
-import { Slider } from '@hanzo/ui/primitives'
+import { Slider } from '@luxfi/ui/primitives'
 
 const ItemCarouselSlider: React.FC<{
   clx?: string

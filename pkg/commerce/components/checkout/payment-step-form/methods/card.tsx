@@ -11,9 +11,9 @@ import {
   Button,
   Separator,
   Skeleton,
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
 
 import { useCommerce } from '../../../../service/context'
 import { processSquareCardPayment } from '../../../../util'

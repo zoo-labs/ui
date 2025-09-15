@@ -16,7 +16,7 @@ import {
   FormField, 
   FormItem, 
   Input 
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
 import { useCommerce } from '../../../service/context'
 import type { Promo } from '../../../types'

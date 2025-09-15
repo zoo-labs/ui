@@ -1,4 +1,4 @@
-import type { ImageDef, MediaStackDef } from '@hanzo/ui/types'
+import type { ImageDef, MediaStackDef } from '@luxfi/ui/types'
 
 interface Product extends MediaStackDef {
   id: string    // DB index // not a logical aspect of our domain.  may not be necessary at all

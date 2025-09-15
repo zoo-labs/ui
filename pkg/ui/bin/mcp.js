@@ -4,8 +4,8 @@
  * Hanzo UI MCP Server
  * 
  * This is the main entry point for the MCP server that can be run with:
- * - npx @hanzo/ui mcp
- * - npx @hanzo/ui@latest mcp
+ * - npx @luxfi/ui mcp
+ * - npx @luxfi/ui@latest mcp
  * 
  * The server provides AI assistants with tools to:
  * - List and search components
@@ -153,7 +153,7 @@ Use 'get_component' to get more details about a specific component.`,
 To install the ${name} component:
 
 \`\`\`bash
-npx @hanzo/ui@latest add ${name}
+npx @luxfi/ui@latest add ${name}
 \`\`\`
 
 This will add the component to your project and install any required dependencies.
@@ -207,7 +207,7 @@ function showHelp() {
 Hanzo UI MCP Server
 
 Usage:
-  npx @hanzo/ui mcp [options]
+  npx @luxfi/ui mcp [options]
 
 Options:
   --help, -h        Show this help message
@@ -218,13 +218,13 @@ Options:
 
 Examples:
   # Run MCP server (stdio mode for AI clients)
-  npx @hanzo/ui mcp
+  npx @luxfi/ui mcp
 
   # Run in HTTP mode for testing
-  npx @hanzo/ui mcp --http --port 3333
+  npx @luxfi/ui mcp --http --port 3333
 
   # Use custom registry
-  npx @hanzo/ui mcp --registry https://my-registry.com/registry.json
+  npx @luxfi/ui mcp --registry https://my-registry.com/registry.json
 
 AI Client Configuration:
 
@@ -233,7 +233,7 @@ For Claude Desktop (.mcp.json):
     "mcpServers": {
       "hanzo-ui": {
         "command": "npx",
-        "args": ["@hanzo/ui", "mcp"]
+        "args": ["@luxfi/ui", "mcp"]
       }
     }
   }
@@ -243,7 +243,7 @@ For Cursor (.cursor/mcp.json):
     "mcpServers": {
       "hanzo-ui": {
         "command": "npx",
-        "args": ["@hanzo/ui", "mcp"]
+        "args": ["@luxfi/ui", "mcp"]
       }
     }
   }
@@ -253,7 +253,7 @@ For VS Code (.vscode/mcp.json):
     "mcpServers": {
       "hanzo-ui": {
         "command": "npx",
-        "args": ["@hanzo/ui", "mcp"]
+        "args": ["@luxfi/ui", "mcp"]
       }
     }
   }
@@ -291,9 +291,9 @@ Learn more: https://ui.hanzo.ai/docs/mcp
 function showVersion() {
   try {
     const packageJson = require("../package.json");
-    console.log(`@hanzo/ui MCP Server v${packageJson.version}`);
+    console.log(`@luxfi/ui MCP Server v${packageJson.version}`);
   } catch (error) {
-    console.log("@hanzo/ui MCP Server");
+    console.log("@luxfi/ui MCP Server");
   }
 }
 
@@ -378,8 +378,8 @@ async function main() {
   } catch (error) {
     console.error("Error starting MCP server:", error);
     console.error("\nTroubleshooting:");
-    console.error("1. Make sure @hanzo/ui is properly installed");
-    console.error("2. Try running: npm install @hanzo/ui@latest");
+    console.error("1. Make sure @luxfi/ui is properly installed");
+    console.error("2. Try running: npm install @luxfi/ui@latest");
     console.error("3. Check that all dependencies are installed");
     process.exit(1);
   }

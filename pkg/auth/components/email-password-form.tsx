@@ -13,9 +13,9 @@ import {
   FormItem,
   FormMessage,
   Input
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
  
 const formSchema = z.object({
   email: z.string().email(),

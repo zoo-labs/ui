@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { reaction } from 'mobx'
 import { observer } from 'mobx-react-lite'
 
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
 
 import {
   ApplyTypography,
@@ -14,7 +14,7 @@ import {
   CarouselPrevious,
   CarouselNext,
   MediaStack,
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
 import type { MultiFamilySelectorProps, LineItem } from '../../../types'
 import { 

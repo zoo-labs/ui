@@ -3,8 +3,8 @@
 import React from 'react'
 import { observer } from 'mobx-react-lite'
 
-import { cn } from '@hanzo/ui/util'
-import { Image } from '@hanzo/ui/primitives'
+import { cn } from '@luxfi/ui/util'
+import { Image } from '@luxfi/ui/primitives'
 
 import type { LineItem } from '../../../types'
 import { formatCurrencyValue } from '../../../util'

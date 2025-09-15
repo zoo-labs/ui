@@ -3,8 +3,8 @@ import React, { useRef, useEffect, type ComponentType } from 'react'
 import { reaction, type IReactionDisposer } from 'mobx'
 import { observer } from 'mobx-react-lite'
 
-import { cn } from '@hanzo/ui/util'
-import { ApplyTypography, MediaStack } from '@hanzo/ui/primitives'
+import { cn } from '@luxfi/ui/util'
+import { ApplyTypography, MediaStack } from '@luxfi/ui/primitives'
 
 import type { 
   ItemSelectorProps, 

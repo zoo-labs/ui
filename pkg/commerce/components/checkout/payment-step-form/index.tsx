@@ -6,8 +6,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@hanzo/ui/primitives'
-import { useAuth } from '@hanzo/auth/service'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@luxfi/ui/primitives'
+import { useAuth } from '@luxfi/auth/service'
 
 import { useCommerce } from '../../../service/context'
 import { sendFBEvent, sendGAEvent } from '../../../util/analytics'

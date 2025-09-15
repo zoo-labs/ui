@@ -1,15 +1,15 @@
 import React from 'react'
 import { observer } from 'mobx-react-lite'
 
-import { MediaStack, Skeleton } from '@hanzo/ui/primitives'
-import type { Dimensions } from '@hanzo/ui/types'
+import { MediaStack, Skeleton } from '@luxfi/ui/primitives'
+import type { Dimensions } from '@luxfi/ui/types'
 
 import { useCommerce } from '../..'
 
 import type { ItemSelectorOptions, ItemSelectorProps, LineItem } from '../../types'
 import TitleAndByline from './title-and-byline'
 import { accessItemOptions } from '../../util'
-import { cn } from '@hanzo/ui/util'
+import { cn } from '@luxfi/ui/util'
 
 
 const DEF_MEDIA_CONSTRAINT = {w: 200, h: 200}

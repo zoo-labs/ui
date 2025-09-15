@@ -1,4 +1,4 @@
-import type { AnimationDef, ImageDef, MediaStackDef, VideoDef } from '@hanzo/ui/types'
+import type { AnimationDef, ImageDef, MediaStackDef, VideoDef } from '@luxfi/ui/types'
 
 interface FamilyMediaData {
   img?: Record<string, ImageDef>

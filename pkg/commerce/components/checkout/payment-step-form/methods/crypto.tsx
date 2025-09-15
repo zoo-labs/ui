@@ -16,7 +16,7 @@ import {
   SelectTrigger, 
   SelectValue, 
   toast 
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
 import Eth from '../crypto-icons/eth'
 import { useCommerce } from '../../../../service/context'

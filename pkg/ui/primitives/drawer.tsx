@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { Drawer as DrawerPrimitive } from '@hanzo/react-drawer'
+import { Drawer as DrawerPrimitive } from '@luxfi/react-drawer'
 
 import { cn } from '../util'
 

@@ -17,7 +17,7 @@ import {
   SelectItem, 
   SelectTrigger, 
   SelectValue 
-} from '@hanzo/ui/primitives'
+} from '@luxfi/ui/primitives'
 
 import { useCommerce } from '../../service/context'
 

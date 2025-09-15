@@ -26,7 +26,7 @@ try {
 }
 
 /**
- * Enhanced MCP Server implementation for @hanzo/ui registry
+ * Enhanced MCP Server implementation for @luxfi/ui registry
  * Provides comprehensive tools, resources, and prompts for AI-assisted development
  */
 export const server = new Server(
@@ -112,7 +112,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     tools: [
       {
         name: "init",
-        description: "Initialize a new project using @hanzo/ui components and styles.",
+        description: "Initialize a new project using @luxfi/ui components and styles.",
         inputSchema: zodToJsonSchema(z.object({
           style: z.string().optional().describe("The style to use for the project (e.g., 'default' or 'new-york')"),
         })),
@@ -256,7 +256,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
         for (const item of items) {
           content += `### ${item.name}\n`
           content += `${item.description || 'No description'}\n\n`
-          content += `**Command:** \`npx @hanzo/ui@latest add ${item.name}\`\n\n`
+          content += `**Command:** \`npx @luxfi/ui@latest add ${item.name}\`\n\n`
         }
       }
 
@@ -272,7 +272,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
       for (const block of blocks) {
         content += `## ${block.name}\n`
         content += `${block.description || 'No description'}\n\n`
-        content += `**Command:** \`npx @hanzo/ui@latest add ${block.name}\`\n\n`
+        content += `**Command:** \`npx @luxfi/ui@latest add ${block.name}\`\n\n`
       }
 
       return {
@@ -293,7 +293,7 @@ cd my-app
 
 ### 2. Initialize Hanzo UI
 \`\`\`bash
-npx @hanzo/ui@latest init
+npx @luxfi/ui@latest init
 \`\`\`
 
 This will:
@@ -305,11 +305,11 @@ This will:
 ### 3. Add components
 \`\`\`bash
 # Add specific components
-npx @hanzo/ui@latest add button
-npx @hanzo/ui@latest add card dialog
+npx @luxfi/ui@latest add button
+npx @luxfi/ui@latest add card dialog
 
 # Add multiple components
-npx @hanzo/ui@latest add button card dialog
+npx @luxfi/ui@latest add button card dialog
 \`\`\`
 
 ## Manual Installation
@@ -812,7 +812,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           for (const item of items) {
             content += `### ${item.name}\n`
             content += `${item.description || 'No description'}\n`
-            content += `**Install:** \`npx @hanzo/ui@latest add ${item.name}\`\n\n`
+            content += `**Install:** \`npx @luxfi/ui@latest add ${item.name}\`\n\n`
           }
         }
       }
@@ -866,7 +866,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       // Installation
       content += `## Installation\n\n`
       content += `\`\`\`bash\n`
-      content += `npx @hanzo/ui@latest add ${name}\n`
+      content += `npx @luxfi/ui@latest add ${name}\n`
       content += `\`\`\`\n\n`
       
       // Files
@@ -924,7 +924,7 @@ npx tailwindcss init -p
 Run the init command to set up your project:
 
 \`\`\`bash
-npx @hanzo/ui@latest init
+npx @luxfi/ui@latest init
 \`\`\`
 
 You will be asked a few questions:
@@ -941,15 +941,15 @@ You will be asked a few questions:
 
 \`\`\`bash
 # Add individual components
-npx @hanzo/ui@latest add button
-npx @hanzo/ui@latest add card
-npx @hanzo/ui@latest add dialog
+npx @luxfi/ui@latest add button
+npx @luxfi/ui@latest add card
+npx @luxfi/ui@latest add dialog
 
 # Add multiple at once
-npx @hanzo/ui@latest add button card dialog form
+npx @luxfi/ui@latest add button card dialog form
 
 # Add all components (use with caution)
-npx @hanzo/ui@latest add --all
+npx @luxfi/ui@latest add --all
 \`\`\`
 
 ## Manual Installation

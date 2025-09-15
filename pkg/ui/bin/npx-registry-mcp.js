@@ -4,7 +4,7 @@
 const { program } = require("commander")
 
 program
-  .name("npx @hanzo/ui registry:mcp")
+  .name("npx @luxfi/ui registry:mcp")
   .description("Run the Hanzo UI registry with MCP support")
   .action(() => {
     console.log("Starting Hanzo UI MCP server...")

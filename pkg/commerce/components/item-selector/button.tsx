@@ -9,9 +9,9 @@ import {
   Label, 
   RadioGroup, 
   ScrollArea 
-} from '@hanzo/ui/primitives'
-import { cn } from '@hanzo/ui/util'
-import type { Dimensions } from '@hanzo/ui/types'
+} from '@luxfi/ui/primitives'
+import { cn } from '@luxfi/ui/util'
+import type { Dimensions } from '@luxfi/ui/types'
 
 import type { ItemSelectorProps, LineItem } from '../../types'
 import { accessItemOptions, formatCurrencyValue } from '../../util'

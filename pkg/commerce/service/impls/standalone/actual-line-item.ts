@@ -5,7 +5,7 @@ import {
   observable, 
 } from 'mobx'
 
-import type { ImageDef, MediaTransform, VideoDef } from '@hanzo/ui/types'
+import type { ImageDef, MediaTransform, VideoDef } from '@luxfi/ui/types'
 
 import type { Product, LineItem, CommerceService } from '../../../types'
 

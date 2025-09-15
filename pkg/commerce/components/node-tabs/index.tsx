@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 
-import { ToggleGroup, ToggleGroupItem} from "@hanzo/ui/primitives"
-import { cn } from '@hanzo/ui/util'
+import { ToggleGroup, ToggleGroupItem} from "@luxfi/ui/primitives"
+import { cn } from '@luxfi/ui/util'
 
 import type { CategoryNode, StringMutator, StringArrayMutator } from '../../types'
 import NodeImage from './node-image'
