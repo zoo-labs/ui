@@ -1,13 +1,15 @@
-type IconProps = React.HTMLAttributes<SVGElement>
+type IconProps = React.HTMLAttributes<SVGElement | HTMLImageElement>
 
 export const Icons = {
-  logo: (props: IconProps) => (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <rect width="32" height="32" rx="6" fill="#10B981"/>
-      <path d="M7 10H19L7 22H25" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="13" cy="16" r="1.5" fill="white"/>
-      <circle cx="19" cy="16" r="1.5" fill="white"/>
-    </svg>
+  logo: (props: Omit<IconProps, 'ref'>) => (
+    <img
+      src="/zoo-logo.png"
+      alt="Zoo"
+      width="24"
+      height="24"
+      style={{ borderRadius: '4px', ...props.style }}
+      className={props.className}
+    />
   ),
   twitter: (props: IconProps) => (
     <svg
