@@ -60,7 +60,7 @@
     }
   },
   "dependencies": {
-    "@hanzoai/react-drawer": "^0.1.8",
+    "@hanzo/react-drawer": "^0.1.8",
     "@modelcontextprotocol/sdk": "^1.10.2",
     "@next/third-parties": "^15.0.1",
     "@radix-ui/react-accordion": "^1.1.2",
