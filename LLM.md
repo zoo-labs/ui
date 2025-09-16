@@ -1,13 +1,91 @@
-# Hanzo UI - AI Assistant Context
+# Zoo UI - AI Assistant Context
+
+## REBRANDING STATUS: HANZO → ZOO
+
+This document tracks the rebranding effort from "Hanzo" to "Zoo" across the entire UI library.
+
+### Files Requiring Hanzo → Zoo Updates
+
+#### Configuration Files
+- `/LICENSE.md` - Lines 3, 16: Copyright and trademark references
+- `/Makefile` - Lines 1-2, 25, 42, 168, 202-206, 218, 221, 224, 226-227, 231, 252-253, 261, 268-272, 327, 333: Comments, URLs, package names
+- `/pnpm-workspace.yaml` - Lines 9-10: Package names (@hanzo/auth, @hanzo/ui)
+- `/brand.config.ts` - Lines 60-97: Complete brand configuration
+- `/package.json` - Lines 7-8: Author name and URL
+- `/app/package.json` - Line 2: Package name already updated to @luxfi/ui-web
+- `/pkg/ui/package.json` - Lines 10, 14, 23-25, 32, 41-42, 63: Author, repo, keywords, scripts
+- `/pkg/auth/package.json` - Lines 2, 8, 10, 14, 19-20, 24, 33: Package name, scope, author, repo, keywords
+
+#### Source Code Files
+- `/app/config/site.ts` - Lines 2-11: Site name, URL, description, links
+- `/app/components/site-footer.tsx` - Line 15: "Built by hanzo" text
+- `/app/components/main-nav.tsx` - Line 20: Site name display
+- `/app/components/icons.tsx` - Lines 4-36: Logo SVG component (Hanzo logo)
+- `/app/components/hanzo-logo.tsx` - Entire file: Hanzo logo component
+- `/app/public/hanzo-logo.svg` - Logo file
+
+#### Authentication Package
+- `/pkg/auth/service/auth-service.ts` - Lines 1, 8, 10-13: HanzoUserInfo type references
+- `/pkg/auth/service/context.tsx` - Lines 8, 29: HanzoUserInfo type references
+- `/pkg/auth/service/get-singleton.ts` - Lines 4, 22: HanzoUserInfo type references
+- `/pkg/auth/service/impl/firebase-support.ts` - Line 78: HanzoUserInfo return type
+- `/pkg/auth/service/impl/index.ts` - Lines 4, 16, 36, 51, 53, 65, 78, 112, 145, 176, 223: HanzoUserInfo type usage
+- `/pkg/auth/types/hanzo-user-info.ts` - Lines 1, 8: Interface name and export
+- `/pkg/auth/types/hanzo-user-info-value.ts` - Lines 1, 8: Type name and export
+- `/pkg/auth/types/index.ts` - Lines 1, 4: Export statements
+- `/pkg/auth/components/signup-panel.tsx` - Line 164: Comment reference
+- `/pkg/auth/components/login-panel.tsx` - Line 163: Comment reference
+- `/pkg/auth/server/firebase-support.ts` - Lines 8, 54: Type references
+- `/pkg/auth/README.md` - Lines 1, 5, 7, 9, 15-17, 45, 54, 61: Package names and examples
+- `/pkg/auth/tsconfig.json` - Line 2: Extends path reference
+
+#### Documentation and Scripts
+- `/README.md` - Lines 1, 5-6, 10: Package name and documentation URLs
+- `/WHITE_LABEL.md` - Lines 3, 9, 79, 120, 126, 160, 249, 267: References to hanzoai/ui
+- `/CI_SETUP.md` - Lines 18, 21, 33, 43, 45, 80, 91-92, 98, 104: GitHub repo and package references
+- `/CONTRIBUTING.md` - Lines 3, 7, 44, 82: Documentation URLs and package names
+- `/script/sync-templates.sh` - Line 27: GitHub clone URL
+- `/scripts/rebrand.sh` - Lines 26, 34, 47, 53-54, 60-61, 80, 86, 97-98: Package names and domains
+- `/template/next/components.json` - Line 2: Schema URL
+- `/template/next/config/site.ts` - Line 16: Documentation URL
+
+#### GitHub Workflows
+- `/.github/workflows/ci.yml` - Line 133: App URL
+- `/.github/workflows/release.yml` - Line 12: Repository owner check
+- `/.github/workflows/prerelease-comment.yml` - Lines 13, 31, 52: Repository owner and package names
+- `/.github/workflows/prerelease.yml` - Lines 13, 59: Repository owner and artifact names
+
+#### Build Files and Dependencies
+- `/pnpm-lock.yaml` - Multiple lines: @hanzo package references throughout
+- `/.git/COMMIT_EDITMSG` - Line 1: Commit message with @hanzo reference
+
+### Brand Assets Requiring Updates
+- `/app/public/hanzo-logo.svg` - Hanzo logo SVG file
+- `/app/components/hanzo-logo.tsx` - Hanzo logo React component
+- `/app/components/icons.tsx` - Logo component within Icons object
+
+### URLs and Domains to Update
+- `ui.hanzo.ai` → `ui.zoo.ai` (or appropriate Zoo domain)
+- `hanzo.ai` → `zoo.ai`
+- `github.com/hanzoai` → `github.com/zooai` (or appropriate org)
+- `@hanzo/*` → `@zoo/*` or `@zooai/*` (NPM scope)
+
+### Key Branding Elements
+1. **Company Name**: "Hanzo AI, Inc" → "Zoo AI, Inc" (or appropriate entity)
+2. **Package Scope**: "@hanzo" → "@zoo" or "@zooai"
+3. **GitHub Organization**: "hanzoai" → "zooai" or "zoo"
+4. **Domain**: "hanzo.ai" → "zoo.ai"
+5. **Logo/Visual Assets**: Replace Hanzo geometric logo with Zoo branding
+6. **Social Media**: Twitter handle from "@hanzo" to Zoo equivalent
 
 ## Project Overview
 
-Hanzo UI is a comprehensive React component library built on top of shadcn/ui v4, featuring:
-- 50+ primitive components with Hanzo branding
+Zoo UI is a comprehensive React component library built on top of shadcn/ui v4, featuring:
+- 50+ primitive components with Zoo branding
 - Full TypeScript support with React 19
 - Tailwind CSS 4.1 with OKLCH color system
 - Model Context Protocol (MCP) server for AI assistance
-- GitHub Pages deployment at ui.hanzo.ai
+- GitHub Pages deployment
 
 ## Recent Updates (2025-09-13)
 

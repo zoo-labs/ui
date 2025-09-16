@@ -1,11 +1,11 @@
 {
-  "name": "@luxfi/react-sdk",
+  "name": "@zooai/react-sdk",
   "version": "1.0.0",
   "license": "BSD-3-Clause",
   "type": "module",
   "author": {
-    "name": "Hanzo AI, Inc",
-    "url": "https://hanzo.ai"
+    "name": "Zoo Labs Foundation Inc",
+    "url": "https://zoo.ngo"
   },
   "scripts": {
     "build": "pnpm -r run build",

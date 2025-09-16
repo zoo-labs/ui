@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "hanzo",
-      url: "https://hanzo.ai",
+      name: "Zoo Labs",
+      url: "https://zoo.ngo",
     },
   ],
-  creator: "hanzo",
+  creator: "Zoo Labs Foundation Inc",
   openGraph: {
     type: "website",
     locale: "en_US",

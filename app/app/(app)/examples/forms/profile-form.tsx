@@ -57,8 +57,8 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>
 const defaultValues: Partial<ProfileFormValues> = {
   bio: "I own a computer.",
   urls: [
-    { value: "https://hanzo.ai" },
-    { value: "http://twitter.com/hanzo" },
+    { value: "https://zoo.ngo" },
+    { value: "http://twitter.com/zoolabs" },
   ],
 }
 
@@ -95,7 +95,7 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="hanzo" {...field} />
+                <Input placeholder="zoo" {...field} />
               </FormControl>
               <FormDescription>
                 This is your public display name. It can be your real name or a
