@@ -5,11 +5,11 @@ const nextConfig = {
   // Enable static export for GitHub Pages deployment
   output: process.env.GITHUB_ACTIONS ? "export" : undefined,
   
-  // Base path for GitHub Pages (when deployed to github.io subdirectory)
-  basePath: process.env.GITHUB_PAGES ? "/react-sdk" : "",
+  // No base path needed for custom domain
+  basePath: "",
   
   // Asset prefix for proper loading on custom domain
-  assetPrefix: process.env.NEXT_PUBLIC_APP_URL || "",
+  assetPrefix: "",
   
   devIndicators: false,
   typescript: {
