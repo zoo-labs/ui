@@ -1,17 +1,17 @@
 {
-  "name": "@zooai/ui",
-  "version": "4.5.4",
+  "name": "@zoo/ui",
+  "version": "4.5.6",
   "description": "Library that contains shared UI primitives, support for a common design system, and other boilerplate support.",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public",
-    "scope": "@zooai"
+    "scope": "@zoo"
   },
-  "author": "Hanzo AI, Inc.",
+  "author": "Zoo AI, Inc.",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hanzoai/react-sdk.git",
+    "url": "git+https://github.com/zooai/react-sdk.git",
     "directory": "pkg/ui"
   },
   "keywords": [
@@ -20,16 +20,16 @@
     "analytics",
     "ai",
     "chat",
-    "hanzo",
-    "hanzo-ai",
-    "hanzoai",
+    "zoo",
+    "zoo-ai",
+    "zooai",
     "radix-ui",
     "react",
     "sdk",
     "ui"
   ],
   "scripts": {
-    "lat": "npm show @luxfi/ui version",
+    "lat": "npm show @zoo/ui version",
     "pub": "npm publish",
     "tc": "tsc",
     "build": "tsc -p tsconfig.json",
@@ -38,11 +38,13 @@
     "registry:mcp:http": "node ./bin/cli.js registry:mcp --http"
   },
   "bin": {
-    "@luxfi/ui": "./bin/cli.js",
-    "hanzo-ui": "./bin/cli.js"
+    "@zoo/ui": "./bin/cli.js",
+    "zoo-ui": "./bin/cli.js"
   },
   "exports": {
+    ".": "./components/index.ts",
     "./blocks": "./blocks/index.ts",
+    "./components": "./components/index.ts",
     "./primitives": "./primitives/index-next.ts",
     "./primitives-common": "./primitives/index-common.ts",
     "./registry": {
@@ -54,13 +56,14 @@
     "./types": "./types/index.ts",
     "./util": "./util/index.ts",
     "./util-client": "./util/index-client.ts",
+    "./lib/utils": "./src/utils.ts",
     "./mcp": {
       "types": "./dist/mcp/index.d.ts",
       "default": "./dist/mcp/index.js"
     }
   },
   "dependencies": {
-    "@hanzo/react-drawer": "^0.1.8",
+    "@zoo/react-drawer": "^0.1.8",
     "@modelcontextprotocol/sdk": "^1.10.2",
     "@next/third-parties": "^15.0.1",
     "@radix-ui/react-accordion": "^1.1.2",

@@ -13,7 +13,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Components",
-      href: "/docs/components/accordion",
+      href: "/docs/components",
     },
     {
       title: "Themes",
@@ -322,6 +322,51 @@ export const docsConfig: DocsConfig = {
         {
           title: "Tooltip",
           href: "/docs/components/tooltip",
+          items: [],
+        },
+      ],
+    },
+    {
+      title: "Charts",
+      items: [
+        {
+          title: "Getting started",
+          href: "/docs/charts",
+          items: [],
+        },
+        {
+          title: "Area Chart",
+          href: "/docs/charts/area",
+          items: [],
+        },
+        {
+          title: "Bar Chart",
+          href: "/docs/charts/bar",
+          items: [],
+        },
+        {
+          title: "Line Chart",
+          href: "/docs/charts/line",
+          items: [],
+        },
+        {
+          title: "Pie Chart",
+          href: "/docs/charts/pie",
+          items: [],
+        },
+        {
+          title: "Radar Chart",
+          href: "/docs/charts/radar",
+          items: [],
+        },
+        {
+          title: "Radial Chart",
+          href: "/docs/charts/radial",
+          items: [],
+        },
+        {
+          title: "Tooltip",
+          href: "/docs/charts/tooltip",
           items: [],
         },
       ],
