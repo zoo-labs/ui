@@ -60,8 +60,6 @@ export const metadata: Metadata = {
     icon: "/zoo-logo.png",
     shortcut: "/zoo-logo.png",
     apple: "/zoo-logo.png",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
 }
