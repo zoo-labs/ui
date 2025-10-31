@@ -2,15 +2,21 @@ import { createMDX } from "fumadocs-mdx/next"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Transpile packages that might have issues with pnpm symlinks
+  transpilePackages: ["chrono-node"],
+
   // Enable static export for GitHub Pages deployment
   output: process.env.GITHUB_ACTIONS ? "export" : undefined,
-  
-  // No base path needed for custom domain
-  basePath: "",
-  
+
+  // Use trailing slashes for GitHub Pages compatibility
+  trailingSlash: true,
+
+  // Base path for GitHub Pages (when deployed to github.io subdirectory)
+  basePath: process.env.GITHUB_PAGES ? "/react-sdk" : "",
+
   // Asset prefix for proper loading on custom domain
-  assetPrefix: "",
-  
+  assetPrefix: process.env.NEXT_PUBLIC_APP_URL || "",
+
   devIndicators: false,
   typescript: {
     ignoreBuildErrors: true,
@@ -41,11 +47,6 @@ const nextConfig = {
         source: "/docs/components",
         destination: "/docs/components/accordion",
         permanent: true,
-      },
-      {
-        source: "/examples",
-        destination: "/examples/mail",
-        permanent: false,
       },
       {
         source: "/docs/primitives/:path*",
