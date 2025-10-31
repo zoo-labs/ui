@@ -54,14 +54,9 @@ jobs:
           pnpm build
           touch out/.nojekyll
         env:
-<<<<<<< HEAD:.github/workflows/deploy-pages.yml
           NEXT_PUBLIC_APP_URL: https://ui.zoo.ngo
-          GITHUB_ACTIONS: true
-=======
->>>>>>> hanzo/main:.github/workflows/deploy-gh-pages.yml
           NODE_ENV: production
           GITHUB_ACTIONS: true
-          NEXT_PUBLIC_APP_URL: https://ui.hanzo.ai
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
