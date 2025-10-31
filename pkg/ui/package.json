@@ -1,11 +1,11 @@
 {
-  "name": "@zoo/ui",
+  "name": "@zooai/ui",
   "version": "5.1.1",
   "description": "UI library for Zoo ecosystem with React support. Based on shadcn/ui with comprehensive component coverage.",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public",
-    "scope": "@zoo"
+    "scope": "@zooai"
   },
   "author": "Zoo AI, Inc.",
   "license": "BSD-3-Clause",
