@@ -56,10 +56,14 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>
 // This can come from your database or API.
 const defaultValues: Partial<ProfileFormValues> = {
   bio: "I own a computer.",
+<<<<<<< HEAD
   urls: [
     { value: "https://zoo.ngo" },
     { value: "http://twitter.com/zoolabs" },
   ],
+=======
+  urls: [{ value: "https://hanzo.ai" }, { value: "http://x.com/hanzoai" }],
+>>>>>>> hanzo/main
 }
 
 export function ProfileForm() {
