@@ -54,14 +54,14 @@ jobs:
           pnpm build
           touch out/.nojekyll
         env:
-          NEXT_PUBLIC_APP_URL: https://ui.zoo.ngo
+          NEXT_PUBLIC_APP_URL: https://ui.zoolabs.io
           NODE_ENV: production
           GITHUB_ACTIONS: true
 
       - name: Copy CNAME to output
         run: |
           cd app
-          echo "ui.zoo.ngo" > out/CNAME
+          echo "ui.zoolabs.io" > out/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
