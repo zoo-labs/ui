@@ -58,6 +58,11 @@ jobs:
           NODE_ENV: production
           GITHUB_ACTIONS: true
 
+      - name: Copy CNAME to output
+        run: |
+          cd app
+          echo "ui.zoo.ngo" > out/CNAME
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

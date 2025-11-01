@@ -12,7 +12,7 @@ const nextConfig = {
   trailingSlash: true,
 
   // Base path for GitHub Pages (when deployed to github.io subdirectory)
-  basePath: process.env.GITHUB_PAGES ? "/react-sdk" : "",
+  basePath: "",
 
   // Asset prefix for proper loading on custom domain
   assetPrefix: process.env.NEXT_PUBLIC_APP_URL || "",
