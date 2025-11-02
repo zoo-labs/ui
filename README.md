@@ -24,15 +24,15 @@ Accessible and customizable components for React, Vue, Svelte, and React Native.
 ### Installation
 
 ```bash
-npm install @hanzo/ui
+npm install @zoolabs/ui
 # or
-pnpm add @hanzo/ui
+pnpm add @zoolabs/ui
 ```
 
 ### Usage
 
 ```tsx
-import { Button, Card, Input } from '@hanzo/ui'
+import { Button, Card, Input } from '@zoolabs/ui'
 
 export function App() {
   return (
@@ -55,44 +55,41 @@ export function App() {
 
 ```tsx
 // React (default)
-import { Button } from '@hanzo/ui'
+import { Button } from '@zoolabs/ui'
 
 // Vue
-import { Button } from '@hanzo/ui/vue'
+import { Button } from '@zoolabs/ui/vue'
 
 // Svelte
-import { Button } from '@hanzo/ui/svelte'
+import { Button } from '@zoolabs/ui/svelte'
 
 // React Native
-import { Button } from '@hanzo/ui/react-native'
+import { Button } from '@zoolabs/ui/react-native'
 ```
 
 ## Documentation
 
-<<<<<<< HEAD
-Visit http://ui.zoo.ai/docs to view the documentation.
-=======
-📚 Visit **[ui.hanzo.ai](https://ui.hanzo.ai)** for:
+📚 Visit **[ui.zoolabs.io](https://ui.zoolabs.io)** for:
 
-- [Component Documentation](https://ui.hanzo.ai/docs/components)
-- [Framework Guides](https://ui.hanzo.ai/docs/frameworks)
-- [Installation Guide](https://ui.hanzo.ai/docs/installation)
-- [Examples](https://ui.hanzo.ai/examples)
-- [Page Builder](https://ui.hanzo.ai/builder)
-- [Theme Generator](https://ui.hanzo.ai/theme-generator)
+- [Component Documentation](https://ui.zoolabs.io/docs/components)
+- [Framework Guides](https://ui.zoolabs.io/docs/frameworks)
+- [Installation Guide](https://ui.zoolabs.io/docs/installation)
+- [Examples](https://ui.zoolabs.io/examples)
+- [Page Builder](https://ui.zoolabs.io/builder)
+- [Theme Generator](https://ui.zoolabs.io/theme-generator)
 
 ## CLI
 
 Install components individually:
 
 ```bash
-npx @hanzo/ui add button
-npx @hanzo/ui add card dialog
+npx @zoolabs/ui add button
+npx @zoolabs/ui add card dialog
 ```
 
 ## What's Different from shadcn/ui?
 
-| Feature | shadcn/ui | @hanzo/ui |
+| Feature | shadcn/ui | @zoolabs/ui |
 |---------|-----------|-----------|
 | Components | 58 | **161** |
 | Frameworks | React only | React, Vue, Svelte, React Native |
@@ -104,29 +101,29 @@ npx @hanzo/ui add card dialog
 
 ## Packages
 
-- `@hanzo/ui` - Main UI library (161 components)
-- `@hanzo/auth` - Authentication components
-- `@hanzo/commerce` - E-commerce components
-- `@hanzo/brand` - Branding system
+- `@zoolabs/ui` - Main UI library (161 components)
+- `@zoolabs/auth` - Authentication components
+- `@zoolabs/commerce` - E-commerce components
+- `@zoolabs/brand` - Branding system
 
 ## Examples
 
 ```tsx
 // 3D Components
-import { ThreeDButton, ThreeDCard } from '@hanzo/ui'
+import { ThreeDButton, ThreeDCard } from '@zoolabs/ui'
 
 // AI Components
-import { AIChat, AIAssistant } from '@hanzo/ui'
+import { AIChat, AIAssistant } from '@zoolabs/ui'
 
 // Animations
-import { AnimatedBeam, AnimatedText } from '@hanzo/ui'
+import { AnimatedBeam, AnimatedText } from '@zoolabs/ui'
 ```
 
 ## Development
 
 ```bash
 # Clone repository
-git clone https://github.com/hanzoai/ui.git
+git clone https://github.com/zoo-labs/ui.git
 cd ui
 
 # Install dependencies
@@ -141,7 +138,6 @@ pnpm build
 # Run tests
 pnpm test
 ```
->>>>>>> hanzo/main
 
 ## Contributing
 
@@ -149,20 +145,16 @@ We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md)
 
 ## License
 
-<<<<<<< HEAD
-Licensed under the [MIT license](https://github.com/@zoo/ui/blob/main/LICENSE.md).
-=======
 MIT - See [LICENSE.md](./LICENSE.md) for details.
 
 ## Links
 
-- [Documentation](https://ui.hanzo.ai)
-- [GitHub](https://github.com/hanzoai/ui)
-- [npm](https://www.npmjs.com/package/@hanzo/ui)
-- [Discord](https://discord.gg/hanzo)
-- [Twitter](https://twitter.com/hanzoai)
+- [Documentation](https://ui.zoolabs.io)
+- [GitHub](https://github.com/zoo-labs/ui)
+- [npm](https://www.npmjs.com/package/@zoolabs/ui)
+- [Discord](https://discord.gg/zoo)
+- [Twitter](https://twitter.com/zoo_network)
 
 ---
 
-Built with ❤️ by [Hanzo](https://hanzo.ai)
->>>>>>> hanzo/main
+Built with ❤️ by [Zoo Labs](https://zoo.ngo)
