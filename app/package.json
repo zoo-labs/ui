@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --turbopack --port 3333",
-    "build": "pnpm registry:build && next build",
+    "build": "pnpm registry:build && node node_modules/@hanzo/docs-mdx/dist/bin.js && next build",
     "start": "next start --port 3001",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
@@ -15,7 +15,7 @@
     "registry:build": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-registry.mts",
     "registry:capture": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/capture-registry.mts",
     "validate:registries": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/validate-registries.mts",
-    "postinstall": "fumadocs-mdx"
+    "postinstall": "node node_modules/@hanzo/docs-mdx/dist/bin.js || true"
   },
   "dependencies": {
     "@ctrl/tinycolor": "^4.2.0",
@@ -74,10 +74,8 @@
     "embla-carousel-autoplay": "8.6.0",
     "embla-carousel-react": "8.6.0",
     "framer-motion": "^12.23.22",
-    "fumadocs-core": "15.8.3",
-    "fumadocs-docgen": "3.0.2",
-    "fumadocs-mdx": "12.0.2",
-    "fumadocs-ui": "15.8.3",
+    "@hanzo/docs": "file:../../../hanzo/docs/packages/hanzo-docs",
+    "@hanzo/docs-mdx": "file:../../../hanzo/docs/packages/mdx",
     "geist": "^1.5.1",
     "input-otp": "^1.4.2",
     "jotai": "^2.15.0",

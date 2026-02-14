@@ -1,4 +1,4 @@
-import { createMDX } from "fumadocs-mdx/next"
+import { createMDX } from "@hanzo/docs/mdx/next"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -105,6 +105,8 @@ const nextConfig = {
   },
 }
 
-const withMDX = createMDX({})
+const withMDX = createMDX({
+  outDir: '.docs',
+})
 
 export default withMDX(nextConfig)

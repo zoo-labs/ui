@@ -12,6 +12,26 @@
     "apps/*",
     "packages/*"
   ],
+  "pnpm": {
+    "overrides": {
+      "@hanzo/docs-core": "file:/Users/z/work/hanzo/docs/packages/core",
+      "@hanzo/docs-ui": "file:/Users/z/work/hanzo/docs/packages/ui",
+      "@hanzo/docs-mdx": "file:/Users/z/work/hanzo/docs/packages/mdx",
+      "@hanzo/docs-cli": "file:/Users/z/work/hanzo/docs/packages/cli",
+      "@hanzo/docs-mdx-remote": "file:/Users/z/work/hanzo/docs/packages/mdx-remote",
+      "@hanzo/docs-openapi": "file:/Users/z/work/hanzo/docs/packages/openapi",
+      "@hanzo/docs-typescript": "file:/Users/z/work/hanzo/docs/packages/typescript",
+      "@hanzo/docs-twoslash": "file:/Users/z/work/hanzo/docs/packages/twoslash",
+      "@hanzo/docs-docgen": "file:/Users/z/work/hanzo/docs/packages/doc-gen",
+      "@hanzo/docs-python": "file:/Users/z/work/hanzo/docs/packages/python",
+      "@hanzo/docs-obsidian": "file:/Users/z/work/hanzo/docs/packages/obsidian",
+      "@hanzo/docs-content-collections": "file:/Users/z/work/hanzo/docs/packages/content-collections",
+      "@hanzo/docs-press": "file:/Users/z/work/hanzo/docs/packages/press",
+      "fumadocs-core": "file:/Users/z/work/hanzo/docs/packages/core",
+      "fumadocs-ui": "file:/Users/z/work/hanzo/docs/packages/ui",
+      "fumadocs-mdx": "file:/Users/z/work/hanzo/docs/packages/mdx"
+    }
+  },
   "scripts": {
     "build": "turbo run build",
     "build:cli": "turbo --filter=hanzo build",

@@ -2,7 +2,7 @@ import {
   defineConfig,
   defineDocs,
   frontmatterSchema,
-} from "fumadocs-mdx/config"
+} from "@hanzo/docs/mdx/config"
 import { z } from "zod"
 
 export default defineConfig({

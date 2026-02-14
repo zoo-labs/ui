@@ -23,6 +23,12 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@/.docs": [
+        "./.docs/server.ts"
+      ],
+      "@/.docs/*": [
+        "./.docs/*"
       ]
     },
     "plugins": [
@@ -36,12 +42,12 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
+    ".next/dev/types/**/*.ts",
+    ".docs/**/*.ts"
   ],
   "exclude": [
     "node_modules",
     "./scripts/build-registry.mts",
-    ".source/**",
     "__registry__/**"
   ]
 }
